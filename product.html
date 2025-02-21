@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product -BrandKahani</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <script src="https://unpkg.com/@tailwindcss/browser@4"></script>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <style>
+        @font-face {
+            font-family: majalla;
+            src: url("./assets/fonts/poppins-Regular.ttf") format("truetype");
+        }
+
+        .poppins-regular {
+            font-family: "poppins-Regular", sans-serif;
+        }
+
+        body {
+            font-family: "poppins-Regular", sans-serif;
+        }
+
+        /* .swiper-pagination{
+            position: relative;
+            padding-top: 20px;
+        } */
+    </style>
+</head>
+
+<body>
+    <!-- //////////// header /////////////////////  -->
+    <header class="bg-[#171717] fixed w-full absolute z-20">
+        <nav class="border-b-2 border-[#454545] ">
+            <div class=" py-3 w-10/12 mx-auto text-white">
+                <div class="flex  justify-between items-center">
+                    <!-- //// logo ///  -->
+                    <div>
+                        <a href="">
+                            <img src="./assets/logo.png" width="160px" height="160px" alt="">
+                        </a>
+                    </div>
+                    <!-- /// menu links /// -->
+                    <div class="lg:flex lg:gap-6 items-center text-base tracking-widest hidden">
+                        <a href="./index.html" class="hover:text-[#FE0002]">Home</a>
+                        <a href="./product.html" class="text-[#FE0002]">Products</a>
+                        <a href="./partner.html" class="hover:text-[#FE0002]">Partners</a>
+                        <a href="./add-reviews.html" class="hover:text-[#FE0002]">Add Reviews</a>
+                        <a href="./contact.html" class="hover:text-[#FE0002]">Contact</a>
+                        <!-- <button class="bg-[#FE0002] hover:bg-red-700 px-3 py-2 rounded">Add Property</button> -->
+                        <button
+                            class="bg-[#FE0002] hover:bg-red-700 hover:px-10 px-3 py-3 rounded text-base text-white">Add
+                            Property</button>
+                    </div>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- //////////// hero section //////////////  -->
+    <section>
+        <div class="py-20 bg-[#000] w-full h-[100%]">
+            <h2 class="text-4xl md:text-4xl text-center font-bold py-10 text-white w-[100%]">Product</h2>
+            <!-- Swiper -->
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_1.png" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_2.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_3.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_1.png" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_2.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_3.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_1.png" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_2.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_3.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_1.png" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_2.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                    <div class="swiper-slide">
+                        <img src="./assets/pr_3.jpeg" class="rounded-xl" width="300px" height="300px" alt="">
+                    </div>
+                </div>
+                <!-- <div class="swiper-pagination"></div> -->
+            </div>
+        </div>
+
+    </section>
+    <!-- ///////////// section 1 /////////////  -->
+    <section class="bg-white text-black ">
+        <div class="w-[80%] mx-auto py-20">
+            <div class=" flex flex-col md:flex-row gap-10 justify-between items-center">
+                <div class="w-[100%] md:w-[50%] lg:w-[70%] ">
+                    <h2 class="text-4xl lg:text-6xl md:text-5xl font-base tracking-wider"> About vericheck app </h2>
+                    <p class="pt-10 text-gray-500">Vericheck offers a comprehensive brand monitoring and standardization
+                        service for franchises in
+                        Pakistan. Leveraging vast experience, digital proficiency, and physical presence, we are
+                        facilitating identification and resolution of issues by combining technology and on-site
+                        inspections
+                        to maintain brand standards effectively and foster franchise success</p>
+
+                    <button class="bg-[#FE0002] hover:bg-red-700 hover:px-10 p-3 rounded text-base text-white">Get
+                        More</button>
+                    <button
+                        class="mt-6 ml-5 border-[1px] text-[#FE0002] border-[#FE0002] p-3 rounded-sm hover:px-10 transition-all">Read
+                        more</button>
+                </div>
+                <div class="w-[100%] md:w-[50%] lg:w-[30%] h-full flex items-center justify-center">
+                    <img src="./assets/mobile_1.png" height="100%" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////// section 2 ///////////////////  -->
+    <section class="bg-[#ebe6e6] text-black ">
+        <div class="w-[80%] mx-auto py-20">
+            <div class=" flex flex-col-reverse md:flex-row gap-10 justify-between items-center">
+                <div class="w-[100%] md:w-[50%] lg:w-[30%] h-full flex items-center justify-center">
+                    <img src="./assets/mobile_1.png" height="100%" width="100%" alt="">
+                </div>
+                <div class="w-[100%] md:w-[50%] lg:w-[70%] ">
+                    <h2 class="text-4xl lg:text-6xl md:text-5xl font-base tracking-wider"> About vericheck app </h2>
+                    <p class="pt-10 text-gray-500">Vericheck offers a comprehensive brand monitoring and standardization
+                        service for franchises in
+                        Pakistan. Leveraging vast experience, digital proficiency, and physical presence, we are
+                        facilitating identification and resolution of issues by combining technology and on-site
+                        inspections
+                        to maintain brand standards effectively and foster franchise success</p>
+
+                    <button
+                        class="bg-[#FE0002] hover:bg-red-700 hover:px-10 px-3 py-3 mt-6 rounded text-base text-white">Get
+                        Product</button>
+                    <button
+                        class="mt-6 ml-5 border-[1px] text-[#FE0002] border-[#FE0002] p-3 rounded-sm hover:px-10 transition-all">Read
+                        more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- ///////////// section 3 /////////////  -->
+    <section class="bg-white text-black ">
+        <div class="w-[80%] mx-auto py-20">
+            <div class=" flex flex-col md:flex-row gap-10 justify-between items-center">
+                <div class="w-[100%] md:w-[50%] lg:w-[70%] ">
+                    <h2 class="text-4xl lg:text-6xl md:text-5xl font-base tracking-wider"> About vericheck app </h2>
+                    <p class="pt-10 text-gray-500">Vericheck offers a comprehensive brand monitoring and standardization
+                        service for franchises in
+                        Pakistan. Leveraging vast experience, digital proficiency, and physical presence, we are
+                        facilitating identification and resolution of issues by combining technology and on-site
+                        inspections
+                        to maintain brand standards effectively and foster franchise success</p>
+
+                    <button class="bg-[#FE0002] hover:bg-red-700 hover:px-10 p-3 rounded text-base text-white">Get
+                        More</button>
+                    <button
+                        class="mt-6 ml-5 border-[1px] text-[#FE0002] border-[#FE0002] p-3 rounded-sm hover:px-10 transition-all">Read
+                        more</button>
+                </div>
+                <div class="w-[100%] md:w-[50%] lg:w-[30%] h-full flex items-center justify-center">
+                    <img src="./assets/mobile_1.png" height="100%" width="100%" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////////// section 4 ///////////////////  -->
+    <section class="bg-[#ebe6e6] text-black ">
+        <div class="w-[80%] mx-auto py-20">
+            <div class=" flex flex-col-reverse md:flex-row gap-10 justify-between items-center">
+                <div class="w-[100%] md:w-[50%] lg:w-[30%] h-full flex items-center justify-center">
+                    <img src="./assets/mobile_1.png" height="100%" width="100%" alt="">
+                </div>
+                <div class="w-[100%] md:w-[50%] lg:w-[70%] ">
+                    <h2 class="text-4xl lg:text-6xl md:text-5xl font-base tracking-wider"> About vericheck app </h2>
+                    <p class="pt-10 text-gray-500">Vericheck offers a comprehensive brand monitoring and standardization
+                        service for franchises in
+                        Pakistan. Leveraging vast experience, digital proficiency, and physical presence, we are
+                        facilitating identification and resolution of issues by combining technology and on-site
+                        inspections
+                        to maintain brand standards effectively and foster franchise success</p>
+
+                    <button
+                        class="bg-[#FE0002] hover:bg-red-700 hover:px-10 px-3 py-3 mt-6 rounded text-base text-white">Get
+                        Product</button>
+                    <button
+                        class="mt-6 ml-5 border-[1px] text-[#FE0002] border-[#FE0002] p-3 rounded-sm hover:px-10 transition-all">Read
+                        more</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- /////////////// footer /////////////  -->
+    <footer class="bg-[#000] text-white py-20">
+        <div class="w-[80%] mx-auto">
+            <div class="grid lg:grid-cols-3 md:grid-cols-2 sm:grid-cols-2 grid-cols-1 gap-4">
+                <div>
+                    <img alt="logo" fetchpriority="high" width="130" height="130" decoding="async" data-nimg="1"
+                        style="color:transparent" src="./assets/logo.png">
+                    <p class="pt-10">Brands Kahani is a platform that help brands to build capacity around sustainable
+                        growth, maintain standards, Market penetration and enhanced brand value.</p><span
+                        class="flex gap-4 pt-10"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24"
+                            viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                            stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-facebook ">
+                            <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-youtube ">
+                            <path
+                                d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                            </path>
+                            <path d="m10 15 5-3-5-3z"></path>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-twitter ">
+                            <path
+                                d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z">
+                            </path>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-instagram ">
+                            <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                            <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                            <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                        </svg><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                            fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                            stroke-linejoin="round" class="lucide lucide-linkedin ">
+                            <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                            </path>
+                            <rect width="4" height="12" x="2" y="9"></rect>
+                            <circle cx="4" cy="4" r="2"></circle>
+                        </svg></span>
+                </div>
+                <div>
+                    <div class="pt-10 md:pt-5">
+                        <div class="text-xl font-base tracking-wider pb-10">Contact Us</div><span
+                            class="flex flex-col gap-4"><span class="flex gap-2 w-full items-start"><svg
+                                    xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round" class="lucide lucide-phone w-1/12">
+                                    <path
+                                        d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                    </path>
+                                </svg>
+                                <p class="w-11/12">03041118000</p>
+                            </span><span class="flex gap-2 w-full"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-mail w-1/12">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                <p class="w-11/12">@brandskahani.com</p>
+                            </span><span class="flex gap-2 w-full"><svg xmlns="http://www.w3.org/2000/svg" width="24"
+                                    height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round" class="lucide lucide-map-pin w-1/12">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <p class="w-11/12">Office No. 106, 1st floor, Al-hafeez, heights, galib road, Gulberg 3,
+                                    Lahore.</p>
+                            </span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+
+
+
+
+
+
+    <!-- ///////////////// script /////////////////////////  -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 4,
+            spaceBetween: 10,
+            freeMode: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            breakpoints: {
+                320: { slidesPerView: 2 },
+                768: { slidesPerView: 3 },
+                1024: { slidesPerView: 4 },
+            },
+        });
+    </script>
+
+</body>
+
+</html>
