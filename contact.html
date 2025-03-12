@@ -63,10 +63,10 @@
                 <p class="text-white/90 tracking-wide text-xl font-medium pt-5">HELLO, LETS GET IN TOUCH.</p>
                 <h2 class="text-5xl md:text-4xl text-center font-semibold pt-5">Get in touch</h2>
             </div>
-            <form class="flex flex-col justify-center items-center py-10 w-full">
+            <form id="emailForm" class="flex flex-col justify-center items-center py-10 w-full">
                 <div class="w-[75%]">
                     <label for="full-name" class="text-md w-full pb-5">Full Name:</label>
-                    <input type="text" class="peer border-b-2 border-white w-full py-3 focus:border-white outline-none"
+                    <input type="text" id="name" class="peer border-b-2 border-white w-full py-3 focus:border-white outline-none"
                         required>
                     <p class="hidden  peer-invalid:block text-red-600">
                         Please provide a full name.
@@ -75,14 +75,14 @@
 
                 <div class="w-[75%] py-8">
                     <label for="" class="text-md w-full pb-5"> Email:</label>
-                    <input type="email" class="peer border-b-2 border-white w-full py-3 focus:border-white outline-none"
+                    <input type="email"id="email" class="peer border-b-2 border-white w-full py-3 focus:border-white outline-none"
                         required>
                     <p class="hidden  peer-invalid:block text-red-600">Please provide a valid Email.</p>
                 </div>
                 <div class="w-[75%]">
                     <label for="" class="text-md w-full pb-5"> Message:</label>
                     <textarea type="text"
-                        class="peer border-b-2 border-white w-full min-h-[80px] py-3 focus:border-white outline-none">
+                     id="message" class="peer border-b-2 border-white w-full min-h-[80px] py-3 focus:border-white outline-none">
                     </textarea>
                 </div>
                 <div class="w-[75%] pt-8">
@@ -177,7 +177,34 @@
     </footer>
 
 
+    <script>
+        $(document).ready(function() {
+            $('#emailForm').on('submit', function(event) {
+                event.preventDefault(); // Form submit rokna
 
+                // Form data collect karna
+                var userData = {
+                    name: $('#name').val(),
+                    email: $('#email').val(),
+                    message: $('#message').val()
+                };
+
+                // AJAX request bhejna
+                $.ajax({
+                    url: 'http://localhost:3000/send-email', // Backend endpoint
+                    type: 'POST',
+                    contentType: 'application/json',
+                    data: JSON.stringify(userData),
+                    success: function(response) {
+                        alert('Email sent successfully!');
+                    },
+                    error: function(xhr, status, error) {
+                        alert('Failed to send email. Please try again.');
+                    }
+                });
+            });
+        });
+    </script>
 
 
 </body>
